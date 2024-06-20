@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Center the cart items */
+        }
+
+        ul div {
+            display: inline-block; /* Display cart items in a row */
+            margin: 10px;
+            height: 82px;
+            width: 304px;
+            text-align: start;
+        }
+
+        img {
+            border-radius: 17px;
+            border: 2px solid;
+        }
+
+        button {
+            border-radius: 17px;
+            background-color: brown;
+            color: white;
+            padding: 8px 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 50%;
+            height: 70vh;
+            margin: 35px auto; /* Center the container horizontally */
+            border-radius: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            overflow-y: scroll;
+            text-align: center; /* Center the content inside the container */
+        }
+
+        .heading {
+            background-color: rgb(67 0 86);
+            color: white;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .heading h1 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .date {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .total {
+            font-size: 20px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- body -->
+    <div class="heading">
+        <h1>Shopping Cart</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <ul id="cart-items">
+        </ul>
+    </div>
+    <div class="btns">
+        <p class="total">Total: &#8377;<span id="cart-total">0</span></p>
+        <button id="proceed-to-pay">Proceed to Pay</button>
+    </div>
+
+    <script>
+        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartList = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const proceedToPayBtn = document.getElementById('proceed-to-pay');
+        const currentDate = new Date();
+        const currentDateElement = document.getElementById('current-date');
+
+        // Function to display current date
+
+        function displayCart() {
+            let total = 0;
+
+            cartList.innerHTML = '';
+
+            cartItems.forEach((item, index) => {
+                const listItem = document.createElement('div');
+                const productImage = document.createElement('img');
+                productImage.src = item.image;
+                productImage.width = 50;
+                productImage.height = 50;
+                listItem.appendChild(productImage);
+
+                const productInfo = document.createElement('span');
+                productInfo.textContent = `${item.productName} - ₹${item.price}`;
+                listItem.appendChild(productInfo);
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = () => deleteItem(index);
+                listItem.appendChild(deleteButton);
+
+                cartList.appendChild(listItem);
+
+                total += item.price;
+            });
+
+            cartTotal.textContent = total;
+        }
+
+        function deleteItem(index) {
+            cartItems.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cartItems));
+            displayCart();
+        }
+
+        displayCart();
+
+        // Add event listener for the "Proceed to Pay" button
+        proceedToPayBtn.addEventListener('click', () => {
+            // Implement your logic to proceed to the payment page here
+            // For example, redirecting to a payment page:
+            // window.location.href = 'payment.html';
+            console.log('Proceeding to payment...');
+        });
+    </script>
+    <script src="./assets/js/validate.js"></script>
+
+
+</body>
+
+</html>

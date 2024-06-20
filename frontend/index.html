@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Shop</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- bootstrap links -->
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fonts links -->
+
+
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav class="navbar navbar-expand-lg nav-link " id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo"><span id="span1">@E</span>-commerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+              <li><a class="dropdown-item" href="#">Mobile Phone</a></li>
+              <li><a class="dropdown-item" href="#">Cameras</a></li>
+              <li><a class="dropdown-item" href="#">Fridge</a></li>
+              <li><a class="dropdown-item" href="#">AC</a></li>
+              <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="#">Headphone</a></li>
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">PC Moniter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Account</a>
+          </li>
+        </ul>
+        <div class="d-flex" id="login">
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <button class="btn btn-outline-success" id="login-out" type="submit">Login</button>
+            </a>
+            
+          </li>
+        </div>
+        <li class="cart">
+          <button>
+            <a href="cart.html">
+              <span class="material-icons">shopping_cart</span>
+            </a>
+          </button>
+        </li>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- navigation bar -->
+
+
+  <!-- landing page -->
+  <section class="home">
+    <div class="content">
+      <h1> <span class="span2">WELCOME</span>
+        <br>
+        <span class="span3">To</span><br><span>E-commerce Website</span>
+      </h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, saepe.
+        <br>Lorem ipsum dolor sit amet consectetur.
+      </p>
+      <div class="btn"><button>Shop Now</button></div>
+
+    </div>
+    <div class="img">
+      <img src="./images/pic1.png" alt="">
+    </div>
+  </section>
+  <!-- landing page -->
+
+
+  <!-- product cards -->
+   <!-- Your HTML structure -->
+<section id="products-container">
+  <div class="container" id="product-cards">
+    <h1 class="text-center">PRODUCTS</h1>
+    <div class="row" style="margin-top: 30px;" id="product-card-row">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+  </div>
+</section>
+
+
+      <!-- product cards -->
+
+
+      <!-- other cards -->
+      <div class="container" id="other-cards">
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/c1.png" alt="">
+              <div class="card-img-overlay">
+                <h3>Best Laptop</h3>
+                <h5>Latest Collection</h5>
+                <p>Up To 50% Off</p>
+                <button id="shopnow">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="./images/c2.png" alt="">
+              <div class="card-img-overlay">
+                <h3>Best Headphone</h3>
+                <h5>Latest Collection</h5>
+                <p>Up To 50% Off</p>
+                <button id="shopnow">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- other cards -->
+
+
+      <!-- banner -->
+      <section class="banner">
+        <div class="content">
+          <h1> <span>Electronic Gadget</span>
+            <br>
+            Up To <span id="span2">50%</span> Off
+          </h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, saepe.
+            <br>Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <div class="btn"><button>Shop Now</button></div>
+
+        </div>
+        <div class="img">
+          <img src="./images/image1.png" alt="">
+        </div>
+      </section>
+      <!-- banner -->
+
+
+      <!-- product cards -->
+      <div class="container" id="product-cards">
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="row ">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5 ">
+              <div class="card box-shadow">
+                <img class="card-img" src="./images/pr1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">WASHING MACHINE</h5>
+                  <p class="card-text"> Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                  <h5>Price: &#8377;38000</h5>
+                  <button onclick="addToCart('washing machine', 38000,'./images/pr1.png')">add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+              <div class="card box-shadow">
+                <img class="card-img" src="./images/pr2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">COOLER</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                  <h5>Price: &#8377;7000</h5>
+                  <button onclick="addToCart('cooler', 7000,'./images/pr2.png')">add to cart</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+              <div class="card box-shadow">
+                <img class="card-img" src="./images/pr3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">MICROWAVE OVEN</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                  <h5>Price: &#8377;7999</h5>
+                  <button onclick="addToCart('microwave oven', 7999,'./images/pr3.png')">add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+              <div class="card box-shadow">
+                <img class="card-img" src="./images/pr4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">FRIDGE</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                    the card's content.</p>
+                  <h5>Price: &#8377;10000</h5>
+                  <button onclick="addToCart('fridge', 10000,'./images/pr4.png')">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- other cards -->
+          <div class="container" id="other">
+            <div class="row">
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <img src="./images/c3.png" alt="">
+                  <div class="card-img-overlay">
+                    <h3>Home Gadget</h3>
+                    <p>Latest collection Up To 50% Off</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <img src="./images/c4.png" alt="">
+                  <div class="card-img-overlay">
+                    <h3>Gaming Gadget</h3>
+                    <p>Latest collection Up To 50% Off</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <img src="./images/c5.png" alt="">
+                  <div class="card-img-overlay">
+                    <h3>Electronic Gadget</h3>
+                    <p>Latest collection Up To 50% Off</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- other cards -->
+
+
+          <!-- product cards -->
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="row ">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5 ">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">FAN</h5>
+                    <p class="card-text"> Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: 900</h5>
+                    <button onclick="addToCart('fan', 900,'./images/pr5.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr6.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">FRIDGE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;10000</h5>
+                    <button onclick="addToCart('fridge', 10000,'./images/pr6.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr7.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CPU</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;5000</h5>
+                    <button onclick="addToCart('cpu', 5000,'./images/pr7.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr8.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">TV</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;20000</h5>
+                    <button onclick="addToCart('tv', 20000,'./images/pr8.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="row ">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5 ">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr9.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">WATCH</h5>
+                    <p class="card-text"> Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;12000</h5>
+                    <button onclick="addToCart('watch', 12000,'./images/pr9.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr10.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">POWER BANK</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;9000</h5>
+                    <button onclick="addToCart('power bank', 9000,'./images/pr10.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr11.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">MOUSE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;1200</h5>
+                    <button onclick="addToCart('mouse', 1200,'./images/pr11.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 py-5">
+                <div class="card box-shadow">
+                  <img class="card-img" src="./images/pr12.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">JOYSTICK</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card's content.</p>
+                    <h5>Price: &#8377;2000</h5>
+                    <button onclick="addToCart('joystick', 2000,'./images/pr12.png')">add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <!-- product cards -->
+
+
+              <!-- footer -->
+              <footer id="footer">
+                <div class="footer-top">
+                  <div class="container">
+                    <div class="row">
+                      <div class="seller">
+                        <span class="footer-p"><i style='font-size:24px' class='fas'>Want to sell your products.... <a href="/sellerregister.html"> click here</a></span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!-- footer -->
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+                <script>
+                  function addToCart(productName, price, image) {
+                      // Get the current cart items from localStorage or initialize an empty array
+                      const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+          
+                      // Add the selected product to the cart
+                      cartItems.push({ productName, price, image });
+          
+                      // Store the updated cart in localStorage
+                      localStorage.setItem('cart', JSON.stringify(cartItems));
+                  }
+              </script>
+              <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+              <script src="./assets/js/validate.js"></script>
+              <script src="./assets/js/index.js"></script>
+
+
+</body>
+
+</html>

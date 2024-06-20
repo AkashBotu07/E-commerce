@@ -1,0 +1,37 @@
+products
+{
+    "name": "iphone",
+    "description": "description",
+    "richDescription": "richDescription",
+    "imageurl": "pic.jpg",
+    "brand": "req.body.brand",
+    "price": 70,
+    "category": "655b3b0818542e52c7366c9a",
+    "quantity": 5,
+    "isFeatured": false
+}
+put method in product
+{
+    "category":"655b3b0818542e52c7366c9a",
+    "isFeatured": true
+}
+categories
+{
+    "name":"phone",
+    "icon":"phone",
+    "color":"black"
+}
+users
+{
+        "name": "Akash",
+        "email": "akash4321@gmail.com",
+"password":"akash4321",
+        "phone": 7893180073,
+        "isAdmin": true,
+	"isSeller":true"
+        "street": "brundavati nagar",
+        "apartment": "botu house",
+        "city": "gunupur",
+        "zip": "765022",
+        "country": "india"
+    }
